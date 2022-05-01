@@ -1,9 +1,13 @@
 function divide(number, diviedBy) {
   let result = 0
-  for (let iteration = 1; number <= diviedBy * iteration; iteration++) {
+  const loopTime = number;
+  for (let iteration = 1; iteration < loopTime; iteration++) {
     const result = diviedBy * iteration
+    if (result >= number) {
+      return iteration
+    }
     
   }
-    return result;
+
   }
   module.exports = divide;
